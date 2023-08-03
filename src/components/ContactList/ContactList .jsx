@@ -3,7 +3,7 @@ import css from './ContactList.module.css'
 
 const ContactList = ({ contacts, deleteChenge }) => {
  
-  return (contacts.length>0&&
+  return (contacts.length>0 &&
          <ul className={css.list}>
                 {contacts.map(contact => {
                   const tel=`tel:${contact.number}`
